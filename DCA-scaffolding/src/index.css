@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+body {
+	background-color: #0f0f0f;
+	color: #00ff9f;
+	font-family: 'Orbitron', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.app-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-image: url('https://source.unsplash.com/random/1920x1080/?futuristic');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed; /* Agregado */
+	position: relative;
+}
+.list-songs {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.songs-app {
+	margin: 10px;
+}
+
+.app-container::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.title h1 {
+	font-size: 4rem;
+	text-shadow: 0 0 10px #00ff9f, 0 0 20px #00ff9f, 0 0 30px #00ff9f;
+	margin-bottom: 2rem;
+	z-index: 1;
+}
+
+.form-create-song {
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 2rem;
+	border-radius: 10px;
+	box-shadow: 0 0 20px #00ff9f;
+	z-index: 1;
+}
