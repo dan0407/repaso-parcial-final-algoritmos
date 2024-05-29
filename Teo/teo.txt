@@ -1,0 +1,234 @@
+CHECKPOINT 2
+
+TEMAS:
+
+- ⁠Databases
+- ⁠⁠Firestore
+⁠- ⁠Authentication
+- ⁠⁠Firebase Storage
+- Global State
+- Deploying
+- Web components
+
+DATABASES:
+📊 Base de Datos:
+
+💻 Sistema Informático: Almacena información estructurada.
+🗂️ Organizada: Datos ordenados de manera lógica.
+🔄 Consulta y Actualización: Permite acceder y modificar información.
+👥 Múltiples Usuarios: Varios usuarios pueden usarla al mismo tiempo.
+📦 Gran Volumen: Maneja grandes cantidades de información de manera eficiente.
+
+Tipos de Base de Datos:
+
+🗣️Bases de datos relacionales:
+
+📋 Almacenan información en tablas.
+🔗 Tablas interrelacionadas por claves o campos comunes.
+🏢 Usadas en empresas para gestionar información de clientes, proveedores, inventarios, etc.
+
+Bases de Datos NoSQL:
+📄 Utilizan modelos de datos diferentes al relacional.
+📚 Modelos como documentos, gráficos, clave-valor.
+🌐 Usadas en aplicaciones web y móviles para alta escalabilidad y disponibilidad.
+
+🔎🔦Bases de Datos de Búsqueda:
+🔍 Utilizadas para buscar información específica.
+🌐 Ejemplo: búsquedas web.
+🤖 Utilizan algoritmos de búsqueda para encontrar datos relevantes.
+
+
+🧠Bases de Datos en Memoria:
+💾 Almacenan datos en la RAM.
+⚡ Acceso muy rápido a los datos.
+🎮 Usadas en juegos en línea y análisis de datos en tiempo real.
+
+🔥 Firebase
+
+📱 Plataforma de Desarrollo: Para aplicaciones móviles y web.
+
+☁️ Servicios en la Nube:
+
+🗃️ Base de datos en tiempo real: Almacena y sincroniza datos en tiempo real.
+🔐 Autenticación: Gestión segura de usuarios.
+💾 Almacenamiento: Guarda archivos en la nube.
+🌐 Hosting: Aloja aplicaciones.
+✉️ Mensajería: Notificaciones y mensajes.
+📊 Analíticas: Monitorea y analiza el uso de la app.
+🛠️ Herramientas fáciles de integrar: Altamente escalables y seguras.
+⚙️ Configuración de Webpack: Para usar await en las solicitudes.
+experiments: { topLevelAwait: true },
+
+FIRESTORE:
+
+Firestore es una base de datos en la nube que permite almacenar, sincronizar y consultar datos en tiempo real. Es parte de la suite de productos de Firebase, diseñada para facilitar el desarrollo de aplicaciones móviles y web.
+
+MODELO DE DAATOS BASADOS EN DOCUMENTOS:
+
+Documentos: Los datos se almacenan en documentos, que son pares clave-valor similares a JSON.
+
+Colecciones: Los documentos se agrupan en colecciones. Una colección contiene varios documentos, y un documento puede contener subcolecciones adicionales.
+
+Sincronización en Tiempo Real: Permite a los clientes conectarse a la base de datos y recibir actualizaciones instantáneas cuando los datos cambian.
+
+Escalabilidad Automática: Diseñada para escalar automáticamente con el crecimiento de la aplicación sin necesidad de gestionar servidores o infraestructura adicional.
+
+¿PARA QUÉ SE UTILIZA FIRESTORE?
+
+Almacenamiento de Datos Estructurados y Semi-Estructurados:
+
+Firestore es adecuado para almacenar datos que no siguen un esquema rígido y permiten flexibilidad en la estructura de los datos.
+
+Desarrollo Rápido de Prototipos:
+Gracias a su integración con Firebase, permite a los desarrolladores construir y lanzar aplicaciones rápidamente.
+
+Sincronización entre Dispositivos:
+Mantiene los datos sincronizados entre varios dispositivos, lo que es esencial para aplicaciones móviles y web que necesitan compartir el estado en tiempo real.
+
+
+FIREBASE STORAGE:
+
+
+AUTENTIFICACIÓN :
+- Firebase Authentication es un servicio que facilita la autenticación de usuarios en aplicaciones. Proporciona métodos seguros y fáciles de usar para registrar y autenticar usuarios, gestionando la complejidad del proceso de autenticación y permitiendo a los desarrolladores centrarse en la funcionalidad de sus aplicaciones.
+
+MÉTODOS DE AUTENTIFICACIÓN DIVERSOS:
+
+- Correo Electrónico y Contraseña: Permite a los usuarios registrarse y acceder utilizando su correo electrónico y una contraseña.
+
+- Proveedores de Identidad: Soporta autenticación a través de proveedores de identidad externos como Google, Facebook, Twitter, GitHub, y Microsoft.
+
+- Autenticación Telefónica: Permite la autenticación mediante el envío de un código SMS al teléfono del usuario.
+
+- Autenticación Anónima: Permite a los usuarios utilizar la aplicación sin registrarse, proporcionando una identidad temporal que puede ser vinculada a una cuenta permanente más adelante.
+
+- Gestión de Usuarios: Permite gestionar el ciclo de vida de los usuarios, incluyendo el registro, inicio de sesión, recuperación de contraseñas y verificación de correos electrónicos.
+
+🌐 GLOBAL STATE:
+🔄 Concepto de Flux:
+- En el contexto de la programación, "Flux" se refiere a un patrón de diseño para construir aplicaciones web.
+- Desarrollado por Facebook para lograr aplicaciones más organizadas y escalables.
+
+🔑 Componentes Principales de Flux:
+Acciones (Actions): 📢
+Despachadores (Dispatchers): 🚀
+Almacenes (Stores): 🏬
+
+🧩 Beneficios del Patrón Flux:
+- Separación del flujo de datos de la interfaz de usuario (UI).
+- Mantenimiento más fácil: Al separar la lógica de negocio de la interfaz, cada componente puede mantenerse y cambiarse sin afectar a los demás.
+- Escalabilidad: Facilita el crecimiento de la aplicación.
+
+📢 Acciones (Actions):
+
+- Objetos que describen lo que ha sucedido en la aplicación.
+
+- Ejemplos: cuando el usuario hace clic en un botón o envía un formulario.
+
+🚀 Despachadores (Dispatchers):
+
+- Reciben las acciones.
+
+- Las envían a las tiendas correspondientes.
+
+🏬 Tiendas (Stores):
+
+- Objetos que contienen el estado de la aplicación.
+
+- Al recibir una acción del despachador, actualizan su estado.
+
+- Emiten un evento para notificar a las vistas que el estado ha cambiado.
+
+- Permiten que la interfaz de usuario se actualice en consecuencia.
+
+🔹 Concepto de "Single Source of Truth" (SSOT):
+
+Una única fuente confiable y consistente de datos o información en un sistema u organización.
+
+Toda la información utilizada en la toma de decisiones proviene de esta única fuente autoritativa y actualizada.
+
+🔹 Beneficios de SSOT:
+
+📊 Mejora la toma de decisiones: Todos los usuarios tienen acceso a la misma información precisa y actualizada.
+
+❌ Reducción de errores: Minimiza las discrepancias y errores en los datos.
+
+🔹 Implementación de SSOT:
+
+🛠️ Identificar y definir cuál es la fuente autoritativa de información en la organización o sistema.
+✅ Esta fuente debe ser confiable, actualizada y accesible para todos los usuarios que la necesiten.
+
+WEB COMPONENTS:
+
+- Una suite de diferentes tecnologías.
+
+- Permite la creación de elementos personalizados reutilizables.
+
+🧩 Encapsulamiento de Funcionalidad:
+
+- Encapsula la funcionalidad apartada del resto de tu código.
+
+- Promueve la modularidad y la reutilización.
+
+🔄 Utilización en Aplicaciones Web:
+
+- Pueden ser utilizados en tus aplicaciones web.
+
+- Mejora la organización del código y el mantenimiento.
+
+
+PASOS PARA CREAR UN WEB COMPONENTES:
+
+📝 Planifica el componente:
+
+- Antes de empezar a escribir código, es importante tener un plan claro sobre lo que el componente debería hacer y cómo se usará.
+
+- Define las propiedades y métodos que necesitará el componente, así como cómo se comunicará con el resto de la página.
+
+📄 Crea el archivo HTML:
+
+- El primer paso es crear un archivo HTML que contenga la estructura del componente.
+
+- Incluye todas las etiquetas y atributos necesarios para crear la interfaz del componente.
+
+📦 Crea el archivo JavaScript:
+
+- A continuación, crea un archivo JavaScript que contendrá la lógica del componente.
+
+- Este archivo debe importar el archivo HTML y crear una clase que extienda la clase HTMLElement.
+
+🔍 Define las propiedades y métodos:
+
+- Una vez que se ha creado la clase, define las propiedades y métodos que el componente necesitará para funcionar correctamente.
+
+- Esto incluye la lógica de manejo de eventos y cualquier otra funcionalidad específica del componente.
+
+🔖 Registra el componente:
+
+- Para poder usar el componente en una página, debe ser registrado usando el método customElements.define().
+
+- Este método toma dos argumentos: el nombre del componente y la clase que lo define.
+
+🖥️ Usa el componente:
+
+- Una vez que el componente está registrado, puede ser usado en cualquier página HTML simplemente agregando la etiqueta personalizada que se ha definido.
+
+
+📁 SISTEMAS DE ARCHIVOS:
+
+- Conjunto de reglas y procedimientos para crear, leer, modificar y eliminar archivos y carpetas.
+
+🌲 Estructura Jerárquica:
+
+- Los sistemas de archivos tienen una estructura jerárquica.
+
+- Cada archivo y carpeta está ubicado en una ubicación específica dentro del sistema de archivos.
+
+🔍 Eficiencia de Acceso:
+
+- Permite que el sistema operativo y las aplicaciones accedan a los archivos de manera eficiente.
+
+- Cada archivo se encuentra en una ubicación conocida, lo que facilita su acceso.
+
+
+
