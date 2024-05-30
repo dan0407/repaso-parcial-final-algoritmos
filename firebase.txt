@@ -1,0 +1,22 @@
+1. Crear proyecto en firebase
+2. Deshabilitar google analitics
+3. Ahi crea el proyecto
+4. En la pagina principal, dar click a web (</>)
+5. Darle un nombre al proyecto
+6. Registrar App
+7. Ir a consola
+8. En la barra lateral ir a Compilacion > Firestore Database
+9. Crear base de datos, no mover nada, darle a siguiente
+10. Modo de prueba
+11. CREAR
+12. Barra lateral, arriba, ruedita, configruacion del proyecto
+13. Descargar documento firebase y abrirlo
+14. Irse a 'index.js'
+15. En la pagina, copiar desde const firebase config hasta el punto y coma
+16. Pegar en el visual
+17. Cambiar todo lo que diga user al nombre de la base de datos que quiero poner
+18. Guardar UNA SOLA VEZ, porque si le undes varias se duplica
+19. Recargarr firebase
+20. Si no aparece nada en firebase, en visual, abrir con Go Live e inspeccionar la pagina para revisar si trae la info
+21. Recargar firebase
+22. El documento ya se puede cerrar y se puede abrir el archivo en donde estoy trabajando el checkpoint
