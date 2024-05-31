@@ -71,7 +71,7 @@ experiments: { topLevelAwait: true },
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-FIRESTORE:
+FIRESTORE:  Firestore se especializa en el almacenamiento y la sincronización de datos estructurados en tiempo real. 
 
 Firestore es una base de datos en la nube que permite almacenar, sincronizar y consultar datos en tiempo real. Es parte de la suite de productos de Firebase, diseñada para facilitar el desarrollo de aplicaciones móviles y web. 
 
@@ -104,7 +104,7 @@ Mantiene los datos sincronizados entre varios dispositivos, lo que es esencial p
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-FIREBASE STORAGE:
+FIREBASE STORAGE:  Firebase Storage se enfoca en el almacenamiento de archivos grandes
 
 ¿Qué es Firebase Storage?
 Firebase Storage es un servicio que permite a los desarrolladores almacenar y servir archivos, como imágenes, videos, audio y otros tipos de contenido generado por los usuarios. Está construido sobre Google Cloud Storage, lo que garantiza escalabilidad, alta disponibilidad y seguridad.
