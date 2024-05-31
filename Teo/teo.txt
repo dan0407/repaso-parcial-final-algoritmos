@@ -312,6 +312,8 @@ Cada archivo se encuentra en una ubicación conocida, lo que facilita su acceso.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Deploying:
+
 
 Almacenamiento Web
 El almacenamiento web es una característica de los navegadores web modernos que permite a las aplicaciones web almacenar datos en el navegador del usuario. Esto se debe a la interfaz del API de almacenamiento que expone el Almacenamiento Local (Local Storage) y el Almacenamiento de Sesión (Session Storage). Ref. Almacenamiento Web
@@ -352,3 +354,80 @@ Cookies:
 Almacenar ID de sesión para que el proceso de autenticación sea más rápido.
 Almacenar datos relevantes del perfil del usuario para el servidor.
 Mantener un seguimiento de las rutinas de interacción del usuario.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+El despliegue (deploying) de aplicaciones es el proceso de trasladar una aplicación desde un entorno de desarrollo a un entorno de producción, donde estará disponible para los usuarios finales. Este proceso incluye varias etapas y puede implicar múltiples pasos dependiendo de la complejidad de la aplicación y del entorno en el que se va a desplegar.
+
+Pasos Comunes en el Proceso de Despliegue
+Preparación del Entorno:
+
+Configurar el entorno de producción, incluyendo servidores, bases de datos y otros servicios necesarios.
+Asegurarse de que todas las dependencias del sistema estén instaladas y configuradas correctamente.
+Construcción de la Aplicación:
+
+Compilar el código fuente en un formato ejecutable.
+Minificar y agrupar archivos, como el JavaScript y CSS, en aplicaciones web.
+Pruebas:
+
+Realizar pruebas automatizadas para asegurar que la aplicación funcione como se espera.
+Realizar pruebas de integración y de usuario para identificar y corregir posibles errores.
+Empaquetado:
+
+Crear un paquete de la aplicación listo para ser desplegado. Esto puede incluir archivos binarios, scripts de configuración y otros recursos necesarios.
+Despliegue en el Entorno de Producción:
+
+Transferir los archivos de la aplicación al entorno de producción.
+Configurar la aplicación para que se ejecute correctamente en el entorno de producción.
+Realizar migraciones de bases de datos si es necesario.
+Verificación Post-Despliegue:
+
+Verificar que la aplicación se haya desplegado correctamente y que esté funcionando como se espera.
+Monitorizar la aplicación para identificar cualquier problema que pueda surgir después del despliegue.
+Herramientas y Métodos de Despliegue
+Servicios de PaaS (Plataforma como Servicio):
+
+Heroku: Proporciona una plataforma gestionada para desplegar, gestionar y escalar aplicaciones.
+Firebase: Ofrece servicios de backend, incluyendo alojamiento de aplicaciones web.
+Contenedores:
+
+Docker: Permite empaquetar la aplicación y sus dependencias en un contenedor que puede ejecutarse de manera consistente en cualquier entorno.
+Kubernetes: Orquesta el despliegue, escalado y gestión de aplicaciones contenedorizadas.
+Proveedores de Infraestructura en la Nube:
+
+AWS (Amazon Web Services): Ofrece una amplia gama de servicios para el despliegue de aplicaciones, como EC2, S3, y Elastic Beanstalk.
+Google Cloud Platform (GCP): Proporciona servicios como App Engine, Compute Engine, y Kubernetes Engine.
+Microsoft Azure: Ofrece servicios como App Services, Virtual Machines y Kubernetes Service.
+CI/CD (Integración Continua y Despliegue Continuo):
+
+Jenkins: Una herramienta de automatización de código abierto que facilita la integración continua y el despliegue continuo.
+GitHub Actions: Permite automatizar flujos de trabajo de CI/CD directamente desde los repositorios de GitHub.
+GitLab CI/CD: Ofrece un sistema integrado de CI/CD que facilita la construcción, prueba y despliegue de aplicaciones.
+Automatización de Infraestructura:
+
+Terraform: Permite definir y aprovisionar la infraestructura en la nube utilizando un lenguaje de configuración declarativo.
+Ansible: Facilita la automatización de la configuración, gestión de aplicaciones y orquestación de servicios.
+Tipos de Despliegue
+Despliegue Manual:
+
+Implica realizar todos los pasos de despliegue manualmente. Puede ser propenso a errores y es menos eficiente que los métodos automatizados.
+Despliegue Automatizado:
+
+Utiliza scripts y herramientas de automatización para realizar los pasos de despliegue de manera automática, reduciendo errores y mejorando la eficiencia.
+Despliegue Azul-Verde:
+
+Mantiene dos entornos de producción (azul y verde). Se despliega la nueva versión en el entorno inactivo y luego se cambia el tráfico al nuevo entorno.
+Despliegue Canario:
+
+Despliega la nueva versión a un pequeño subconjunto de usuarios antes de desplegarla a toda la base de usuarios. Esto permite probar y verificar la nueva versión antes de un despliegue completo.
+Despliegue Rolling:
+
+Despliega la nueva versión en pequeñas fases, reemplazando gradualmente las instancias antiguas por las nuevas sin tiempo de inactividad significativo.
+Ventajas del Despliegue Automatizado
+Consistencia y Repetibilidad: Asegura que el despliegue se realice de la misma manera cada vez, reduciendo la posibilidad de errores humanos.
+Eficiencia: Acelera el proceso de despliegue y permite despliegues más frecuentes.
+Reducción de Errores: Minimiza la posibilidad de errores que pueden ocurrir con los despliegues manuales.
+Monitoreo y Feedback Rápido: Permite una supervisión continua y proporciona feedback inmediato sobre el estado del despliegue.
+El despliegue es una fase crítica en el ciclo de vida del desarrollo de software, y la elección del método y las herramientas adecuadas puede tener un impacto significativo en la estabilidad y el rendimiento de la aplicación en producción.
