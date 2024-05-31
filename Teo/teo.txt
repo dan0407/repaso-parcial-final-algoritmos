@@ -25,6 +25,7 @@ DATABASES:
 Tipos de Base de Datos:
 
 🗣️Bases de datos relacionales: 
+
 📋 Almacenan información en tablas.
 🔗 Tablas interrelacionadas por claves o campos comunes.
 🏢 Usadas en empresas para gestionar información de clientes, proveedores, inventarios, etc.
@@ -35,7 +36,10 @@ Bases de Datos NoSQL:
 📄 Utilizan modelos de datos diferentes al relacional.
 📚 Modelos como documentos, gráficos, clave-valor.
 🌐 Usadas en aplicaciones web y móviles para alta escalabilidad y disponibilidad.
+
+
 🔎🔦Bases de Datos de Búsqueda:
+
 🔍 Utilizadas para buscar información específica.
 🌐 Ejemplo: búsquedas web.
 🤖 Utilizan algoritmos de búsqueda para encontrar datos relevantes.
