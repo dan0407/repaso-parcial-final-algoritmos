@@ -48,16 +48,16 @@ export default class Musiclist extends HTMLElement {
 	render() {
 		if (this.shadowRoot) {
 			this.shadowRoot.innerHTML = `
-			<section>
-			<div>
-			<img src="${this.image}">
-			<b>${this.name}</b>
-			<p>${this.autor}</p>
-			<p>Album: ${this.album}</p>
-			<p>Date added: ${this.dateAdded}</p>
-			<p>Duration: ${this.duration}</p>
-		</div>
-		</section>
+        <section>
+        <div>
+        <img src="${this.image}">
+        <b>${this.name}</b>
+        <p>${this.autor}</p>
+        <p>Album: ${this.album}</p>
+        <p>Date added: ${this.dateAdded}</p>
+        <p>Duration: ${this.duration}</p>
+    </div>
+    </section>
 `;
 		}
 		const cssProfile = this.ownerDocument.createElement('style');
